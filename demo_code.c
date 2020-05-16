@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-  printf("Hello World!\n");
-  rertun 0;
+	printf("Hello Team 3!");
+	return 0;
 }
