@@ -17,12 +17,15 @@ before_install:
   - export C_INCLUDE_PATH=$TRAVIS_BUILD_DIR/include:$C_INCLUDE_PATH
   - export LIBRARY_PATH=$TRAVIS_BUILD_DIR/lib:$LIBRARY_PATH
   - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/lib:$LD_LIBRARY_PATH
-  #- cd ..
-  #- cd c
+  #Come back to the repo unwarpped folder
+  - cd ..
+  - cd c
 install:
   - echo  "Reached Install Section"
 
 script:
+  - pwd
+
   - echo "Reached Script Section - cunit_democode"
-  - gcc intial_demo_code_cunit.c -o cunit_democode
+  - gcc   	intial_demo_code_cunit.c -o cunit_democode
   - ./cunit_democode
