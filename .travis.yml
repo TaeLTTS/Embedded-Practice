@@ -24,7 +24,7 @@ install:
 
 script:
   - echo "Reached Script Section - Multi File Compile "
-  - gcc   	Linkfile_multifile/demofile2.c Linkfile_multifile/file1.c  	Linkfile_multifile/file2.c -o output
+  - gcc -o output
   - ./output
   - echo "Reached Script Section - cunit_democode"
   - gcc   	intial_demo_code_cunit.c -o cunit_democode
